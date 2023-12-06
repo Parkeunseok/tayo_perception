@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "tayo_perception",
+            "type": "ros",
+            "request": "launch",
+            "preLaunchTask": "build package only tayo_perception",
+            // "preLaunchTask": "build all packages",
+            "target": "/home/a/tracking_ws/src/tayo_perception/tayo_perception/launch/perception_speedway_final.launch"
+        }
+    ]
+}

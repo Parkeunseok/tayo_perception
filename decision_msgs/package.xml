@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">.
+  <name>decision_msgs</name>
+  <version>0.0.0</version>
+  <description>vehicle state decision related message types.</description>
+
+  <maintainer email="dinnerlee97@gmail.com">Gihwan Jo</maintainer>
+  <author email="dinnerlee97@gmail.com">Gihwan Jo</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <depend>std_msgs</depend>
+
+</package>

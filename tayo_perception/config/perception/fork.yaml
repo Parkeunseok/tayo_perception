@@ -1,0 +1,55 @@
+sensor_info:
+  # Topic
+  sub_lidar1_topic: /hesai64/hesai/pandar
+  sub_lidar2_topic: /velodyne_points
+  pub_hesai_object_pcl_topic: /tayo/perception/object_pcl
+  pub_hesai_globalfilter_pcl_topic: /tayo/perception/globalfilter_pcl
+  pub_hesai_object_pt_topic: /tayo/perception/object_pt
+  # Frame
+  map_frame_id: map
+  lidar_frame_id: pos
+  sub_lidar_frame_id: pos
+  # Sub LiDAR Transform info
+  lidar_pose_x: 0.385041
+  lidar_pose_y: -0.285398
+  lidar_pose_z: -0.045941
+  lidar_ori_x:  -0.00115822
+  lidar_ori_y:  0.00378223
+  lidar_ori_z:  0.00992987
+  lidar_ori_w:  0.999943
+
+perception_param:
+  map_info:]
+    map: "kiapi"
+    image_map: "/home/a/tayo_ws/src/tayo_perception/tayo_perception/map/fork_white.png"
+    init_pose_x: 1210
+    init_pose_y: 310
+    # map flag :0(no map), 1(2d map), 2(3d map)
+    map_flag: 1
+  roi_filter:
+    min_x: -60
+    max_x: 60
+    min_y: -60
+    max_y: 60
+    min_z: -5.0
+    max_z: 0.5
+  map_filter:
+    min_thresh: 0.7
+    min_long_thresh: 1.5
+    max_thresh: 2.0
+
+    min_dist: 60
+    max_dist: 200
+
+    cur_thresh: 0.3
+  ground_remover:
+    grid_dim: 900
+    per_cell: 0.18
+    height_threshold: 0.2
+  euclidean_cluster:
+    range_cluster: 1.5
+    min_cluster_size: 3
+    max_cluster_size: 2500
+    car_width: 1.5
+    car_height: 3.0
+

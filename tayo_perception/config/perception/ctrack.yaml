@@ -1,0 +1,55 @@
+sensor_info:
+  # Topic
+  sub_lidar1_topic: /hesai64/hesai/pandar
+  sub_lidar2_topic: /velodyne_points
+  sub_status_topic_: /tayo/decision/state
+  pub_hesai_object_pcl_topic: /tayo/perception/object_pcl
+  pub_hesai_globalfilter_pcl_topic: /tayo/perception/globalfilter_pcl
+  pub_hesai_object_pt_topic: /tayo/perception/object_pt
+  pub_hesai_object_polygon_topic: /tayo/perception/object_polygon
+  pub_hesai_object_info_topic: /tayo/perception/object_info
+  # Frame
+  map_frame_id: map
+  lidar_frame_id: pos
+  sub_lidar_frame_id: pos
+  # Sub LiDAR Transform info
+  lidar_pose_x: 0.378163
+  lidar_pose_y: -0.324863
+  lidar_pose_z: -0.08236
+  lidar_ori_x:  -0.00219184
+  lidar_ori_y:  0.00281098
+  lidar_ori_z:  -0.0233268
+  lidar_ori_w:  0.999722
+
+perception_param:
+  map_info:
+    map: "ctrack"
+    image_map: "/home/a/tayo_ws/src/tayo_perception/tayo_perception/map/ctrack_v2.png"
+    stop_1_map: "/home/a/tayo_ws/src/tayo_perception/tayo_perception/map/stop_1_inter.png"
+    stop_4_map: "/home/a/tayo_ws/src/tayo_perception/tayo_perception/map/stop_4_inter.png"
+    init_pose_x: 334
+    init_pose_y: 533
+    # map flag :0(no map), 1(2d map), 2(3d map)
+    map_flag: 2
+    final_lab: 10
+  roi_filter:
+    min_x: -50
+    max_x: 50
+    min_y: -50
+    max_y: 50
+    min_z: -5.0
+    max_z: 0.5
+  map_filter:
+    min_thresh: 0.8
+    max_thresh: 2.0
+  ground_remover:
+    grid_dim: 900
+    per_cell: 0.18
+    height_threshold: 0.2
+  noise_remover:
+    remove_size: 2
+  euclidean_cluster:
+    range_cluster: 2.5
+    min_cluster_size: 3
+    max_cluster_size: 2500
+

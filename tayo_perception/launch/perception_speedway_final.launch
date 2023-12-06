@@ -1,0 +1,8 @@
+<launch>
+    <!-- start perception node -->
+    <node name="perception_node" pkg="tayo_perception" type="perception_node" output="screen">
+    <rosparam command="load" file="$(find tayo_perception)/config/perception/speedway_final.yaml" />
+    
+    </node>
+</launch>
+

@@ -1,0 +1,44 @@
+sensor_info:
+  # Topic
+  sub_lidar1_topic: /CarMaker/Sensor/Lidar_64_1
+  pub_hesai_object_pcl_topic: /perception_node/object_pcl
+  pub_hesai_globalfilter_pcl_topic: /perception_node/globalfilter_pcl
+  pub_hesai_object_pt_topic: /perception_node/object_pt
+  # Frame
+  map_frame_id: map
+  lidar_frame_id: Lidar_64_1
+  sub_lidar_frame_id: pos
+  # Sub LiDAR Transform info
+  lidar_pose_x: 0.389838
+  lidar_pose_y: -0.285417
+  lidar_pose_z: -0.00960128
+  lidar_ori_x:  -0.0010591
+  lidar_ori_y:  0.00548515
+  lidar_ori_z:  0.00958933
+  lidar_ori_w:  0.999938
+
+perception_param:
+  map_info:
+    image_map: "/home/a/cm_11/HMC_AV_Challenge_2023_CM_11_ver1.3/ros/ros1_ws/src/tayo_perception/map/yongin_carmaker_3d.png"
+    init_pose_x: 0
+    init_pose_y: 0
+  roi_filter:
+    min_x: -40
+    max_x: 40
+    min_y: -40
+    max_y: 40
+    min_z: -5.0
+    max_z: 0.5
+  map_filter:
+    min_thresh: 0.8
+    max_thresh: 2.0
+    min_long_thresh: 1.5
+  ground_remover:
+    grid_dim: 900
+    per_cell: 0.18
+    height_threshold: 0.2
+  euclidean_cluster:
+    range_cluster: 2.5
+    min_cluster_size: 3
+    max_cluster_size: 2500
+

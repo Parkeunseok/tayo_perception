@@ -1,0 +1,9 @@
+Header header
+int16 finish_state
+int16 regen_state
+int16 state
+int16 rank
+int16 lab
+float32 max_velocity
+int16 direction
+obstacle[] obstacles

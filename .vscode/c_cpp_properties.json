@@ -1,0 +1,33 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/a/tracking_ws/devel/include/**",
+        "/home/a/tracking_ws/src/core_localization/core_localization/include/**",
+        "/home/a/tracking_ws/src/tayo_localization/data_smooth/include/**",
+        "/home/a/tracking_ws/src/tayo_pointpillar/detected_objects_visualizer/include/**",
+        "/home/a/tracking_ws/src/tayo_localization/fast_gicp/include/**",
+        "/home/a/tracking_ws/src/tayo_localization/hdl_global_localization/include/**",
+        "/home/a/tracking_ws/src/tayo_pointpillar/lidar_point_pillars/include/**",
+        "/home/a/tracking_ws/src/tayo_localization/ndt_gpu/include/**",
+        "/home/a/tracking_ws/src/tayo_localization/ndt_omp/include/**",
+        "/home/a/tracking_ws/src/tayo_can/tayo_can/include/**",
+        "/home/a/tracking_ws/src/tayo_control/include/**",
+        "/home/a/tracking_ws/src/tayo_localization/tayo_localization/include/**",
+        "/home/a/tracking_ws/src/tayo_perception/tayo_perception/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
